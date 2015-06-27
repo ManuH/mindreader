@@ -1,1 +1,48 @@
-My page
+
+<!doctype html>
+<html>
+	<head>
+		<title>Mind Reader</title>
+		<link rel="stylesheet" href="../../lib/qunit/qunit/qunit.css"/>
+		<script src="mindreader.js"></script>
+		<style type="text/css">
+		ul#menu li {
+			display: inline;
+		}
+		a {
+			text-decoration: none;
+			color: black;
+		}
+		</style>
+	</head>
+
+	<body>
+
+	<div name = "center", align="center">
+	<img src="images/Mind-reader.png">
+		<h1 id="title">Mind Reader</h1>
+		<form>
+			<li id="par1">Think a two digit number (e.g.: 50)</li>
+			<li id="par2">Deduct consecutively each digit. In our example: (50 -5 -0), resulting 45.</li>
+			<li id="par3">Look up that number in the adjunted list the corresponding symbol to your result</li>
+		</form>
+		<br>
+		<ul id="menu" display = inline> 
+		<li><p id="demo" onclick="myFunction()">Click me to see the result.</p></li>
+		<li><p onclick="change()">Spanish version</p></li>
+		<li><a href="index.html" id="restart">Restart</a></li>
+		</ul>
+		<br>
+		
+		<script>
+
+		
+			matriz = makemtr(10, symbol9);
+
+			imprimir(matriz, 10);
+
+		</script>
+	</div>
+
+	</body>
+</html>
